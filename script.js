@@ -35,7 +35,7 @@ const numero = document.querySelector("#numero");
 const mensagem = document.querySelector("#mensagem");
 
 form.addEventListener("submit", (event) => {
-    event.prventDefault();
+    event.preventDefault();
    
     //Verifica se o nome esta vazio
     if( nameInput.value ===""){

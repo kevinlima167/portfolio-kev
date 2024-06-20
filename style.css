@@ -1,0 +1,496 @@
+
+/* ESTILO GERAL */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    scroll-behavior: smooth;
+}
+.flex{
+    display: flex;
+}
+
+.titulo{
+    color: #fff;
+    font-size: 30px;
+    text-align: center;
+}
+
+.titulo span{
+   color: #f9004d; 
+}
+
+.btn-contato button{
+    padding: 10px 40px;
+    font-size: 18px;
+    font-weight: 700;
+    background-color: #f9004d;
+    border: 0;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: 1.2s;
+}
+button:hover, form .btn-enviar input:hover{
+    box-shadow: 0px 0px 8px #f9004fde;
+    transform: scale(1.05);
+}
+body{
+    background-color: #000;
+    height: 100vh;
+
+}
+
+.interface{
+    max-width: 1280px;
+    margin: 0 auto;
+
+}
+section{
+    height: 100vh;
+}
+/* ESTILO DO CABEÇALHO */
+header{
+    padding: 40px 4%;   
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 120px;
+    background-color: #313131e8; 
+    /* display: flex; */
+    /* justify-content: space-between; */
+    /* align-items: center; */
+    z-index: 100;
+    transition: 0.3s;
+    
+}
+header .logo{
+    display: flex;
+    justify-content: center;
+    
+    
+
+}
+header .logo a p{
+    align-items: end;
+    color: #fff;
+    font-size: 30px;
+    display: flex;
+    font-weight: 600;
+}
+header .logo a p span{
+    color: #f9004d;
+    font-size: 25px;
+    padding: 0 5px;
+    align-items: end;
+}
+
+header .interface{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+
+header a{
+    display: inline-block;
+    color: #ffffff;
+    text-decoration: none;
+    transition: 1.2s;
+}
+
+header a:hover{
+   color: #f9004d;
+   transform: scale(1.05); 
+   font-size: 20px;
+   font-weight: 400;
+}
+header nav ul{
+    list-style: none;
+}
+header nav ul li{
+    display: inline-block;
+    padding: 0  40px;
+}
+
+
+
+
+/* TOPO DO SITE */
+
+.topo-do-site{
+   padding: 50PX 9%;
+   margin: 40px;
+   height:100% ;
+   padding-top: 10%;
+
+}
+.topo-do-site .flex{
+    gap: 90px;
+    align-items: center;
+    justify-content: center;
+}
+.topo-do-site .txt-topo h1{
+    color: #fff;
+    font-size: 42px;
+    line-height: 40px;
+
+}
+.topo-do-site .txt-topo h1 span{
+    color: #f9004d;
+}
+
+.topo-do-site .txt-topo p{
+    color: #fff;
+    margin: 40px 0;
+    font-size: 20px;
+}
+.topo-do-site .img-topo img{
+    position: relative;
+    animation: flutuar 2s ease-in-out infinite alternate;
+}
+
+@keyframes flutuar{
+    0%{
+        top: 0;
+    }
+    100%{
+        top: 30px;
+    }
+}
+/* ESTILO DAS ESPECIALIDADES */
+.Especialidades{
+    padding: 40px 9%;
+    padding-top: 10%;
+    height:100% ;
+}
+
+.Especialidades .flex{
+   gap: 60px; 
+}
+
+.Especialidades .especialidades-box{
+    color: #fff;
+    padding: 40px;
+    /* border: 2px solid #fff; */
+    margin-top: 45px;
+    border-radius: 20px;
+    transition: 1.2s;
+}
+
+.Especialidades .especialidades-box:hover{
+  transform: scale(1.05);
+  box-shadow: 0 0 20px #ffffff78;  
+}
+
+.Especialidades .especialidades-box i{
+    font-size: 70px;
+    color: #f9004d;
+}
+.Especialidades .especialidades-box h3{
+    font-size: 28px;
+    margin: 15px o;
+}
+
+/* ESTILO DO SOBRE */
+
+.sobre{
+   padding: 80px 4%;
+   padding-top: 10%;
+   height:100% ;
+}
+.sobre .img-sobre img{
+    border-radius: 30px;
+}
+.sobre .txt-sobre{
+    color: #fff;
+}
+.sobre .flex{
+    align-items: center;
+    gap: 60px;
+}
+.sobre .txt-sobre h2{
+    font-size: 45px;
+    line-height: 40px;
+    margin-bottom: 30px;
+
+}
+.sobre .txt-sobre h2 span{
+    color: #f9004d;
+    display: block;
+    font-size: 50px;
+}
+.sobre .txt-sobre p{
+    margin: 20px 0;
+    text-align: justify;
+    font-size: 20px;
+}
+.sobre .txt-sobre .btn-social button{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: none;
+    background-color: #f9004d;
+    font-size: 20px;
+    cursor: pointer;
+    margin: 0 5px;
+    transition: 1.2s;
+}
+
+/* PORFOLIO */
+
+.portfolio{
+    height:100% ;
+    padding: 80px 4%;
+    box-shadow: 0 0 40px 10px #ffffff3d;
+    padding-top: 10%;
+}
+.portfolio .flex{
+    justify-content: space-around;
+    margin-top: 60px;
+}
+.img-port{
+  width: 360px;
+  height: 460px;
+  background-size: cover;
+  background-position: 100% 0%;
+  transition: 8s;
+  border-radius: 40px;
+  cursor: pointer;
+  position: relative;
+}
+.img-port:hover{
+    background-position: 100% 100%;
+
+}
+.overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 40px;
+    background-color: #0000009f;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    font-weight: 600;
+    color: #fff;
+    opacity: 0;
+    transition: 1.5s;
+
+}
+.overlay:hover{
+    opacity: 1;
+}
+
+
+/* ESTILIZAÇAO DE SKILS */
+.tabela{
+    height:100% ;
+    padding: 50PX 9%;;
+}
+.tabela .titulo{
+    padding-top: 10%;
+}
+.tabela .link{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 10px;
+}
+.tabela .link li a{
+    text-decoration: none;
+    color: #c9b2b2;
+    transition: 1.2s;
+}
+.tabela .link li a:hover{
+    color: #f9004d;
+    font-size: 20px;
+    transform: scale(1.05);
+
+}
+.especialidade{
+    display: flex;
+    justify-content: center;
+    
+}
+table{
+    margin-top: 5%;
+    width: 100%;
+}
+
+tr{
+    /* height: 40px; */
+    font-size: 20px;
+    color: #fff;
+    background: #fff;
+    color: #000;
+    padding: 10px;
+}
+th{
+   padding: 5px;
+}
+td{
+    padding: 10px;
+    background: #282828;
+    color: #fff;
+    /* width: 110px; */
+    border: 2px solid #8d5366de;
+}
+
+#bar1{
+    height: 10px;
+    border-radius: 40px;
+    border: 2px solid #f9004d;
+    padding: 5px;
+    margin: 10px 0;
+     width: 80%; 
+    background-color: #f9004d; 
+
+}
+#bar2{
+    height: 10px;
+    border-radius: 40px;
+    border: 2px solid #f9004d;
+    padding: 5px;
+    margin: 10px 0;
+     width: 50%; 
+    background-color: #f9004d; 
+
+}
+#bar3{
+    height: 10px;
+    border-radius: 40px;
+    border: 2px solid #f9004d;
+    padding: 5px;
+    margin: 10px 0;
+     width: 90%; 
+    background-color: #f9004d; 
+
+}
+#bar4{
+    height: 10px;
+    border-radius: 40px;
+    border: 2px solid #f9004d;
+    padding: 5px;
+    margin: 10px 0;
+     width: 40%; 
+    background-color: #f9004d; 
+
+}
+
+/* ESTILIZAÇAO DO FORMULARIO */
+
+.formulario{
+    height:100% ;
+    padding: 80px 4%;
+    box-shadow: 0 0 40px 10px #ffffff3d;
+}
+
+.formulario .contactos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.numeros{
+    border-right: 2px solid #9c7682;
+    line-height: 60px;
+}
+.lista{
+    display: flex; 
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-right: 30px;
+    font-size: 20px;
+
+}
+.txt-contacto{
+     
+    gap: 10px;
+    display: flex;
+    align-self: flex-start;
+    
+    
+}
+.txt-contacto h3{
+    color: #f9004d;
+}
+#contact{
+    align-self: flex-start;
+}
+.form-contactos{
+    color: #fff; 
+    align-self: flex-start;
+    display: inline-flex;
+    gap: 20px;
+    
+}
+
+form{
+    width: 400px; 
+    margin-left: 10%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 40px;
+
+}
+.formulario .btn-social{
+    gap: 30px;
+}
+.formulario .btn-social button{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: none;
+    background-color: #f9004d;
+    font-size: 15px;
+    cursor: pointer;
+    margin: 20px 5px 0 5px;
+    transition: 1.2s;
+}
+form input, form textarea{
+    width: 100%;
+    background-color: #282828;
+    border: none;
+    outline: 0;
+    padding: 20px 15px;
+    border-radius: 15px;
+    color: #fff;
+    font-size: 18px;
+}
+form textarea{
+    resize: none;
+    max-height: 200px;
+}
+form .btn-enviar{
+    margin-top: 20px;
+    text-align: center;
+}
+
+form .btn-enviar button{
+    width: 150px;
+    height: 40px;
+    border-radius: 50px;
+    background-color: #f9004d;
+    color: #000;
+    font-weight: 700;
+    cursor: pointer;
+    border: none;
+}
+
+/* ESTILIZAÇÃO DO FOOTER */
+footer{
+    background-color: #282828;
+    width: 100%;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    color: #9c7682;
+}
